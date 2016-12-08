@@ -42,7 +42,7 @@
             .data(dataset)
             .enter()
             .append('p')
-            .text(function(d){ return d[0] + ' = ' + xScale(d[0])});
+            .text(function(d){ return d[0] + ' = ' + xScale(d[0]) });
 
           g.append('g')
             .selectAll('p')
