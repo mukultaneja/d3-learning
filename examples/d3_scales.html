@@ -13,12 +13,13 @@
                     [5, 20], [480, 90], [250, 50], [100, 33], [330, 95],
                     [410, 12], [475, 44], [25, 67], [85, 21], [220, 88]
                   ];
-          var w = 500,
-              h = 200;
+          var w = 960,
+              h = 500;
         
           var xScale = d3.scale.linear()
                           .domain([0, d3.max(dataset, function(d){ return d[0]})])
                           .rangeRound([0, w]);
+
           var yScale = d3.scale.linear()
                           .domain([0, d3.max(dataset, function(d){ return d[1]})])
                           .rangeRound([h, 0]);
@@ -26,6 +27,7 @@
           var xAxis = d3.svg.axis()
                         .scale(xScale)
                         .orient('bottom');
+
           var yAxis = d3.svg.axis()
                         .scale(yScale)
                         .orient('left');
@@ -34,22 +36,28 @@
                       .append('svg')
                       .attr('width', w)
                       .attr('height', h)
-          var g = svg.append('g')
-                      .attr('transform', 'translate(50, 50)');
-        
-          g.append('g')
-            .selectAll('p')
-            .data(dataset)
-            .enter()
-            .append('p')
-            .text(function(d){ return d[0] + ' = ' + xScale(d[0]) });
 
-          g.append('g')
-            .selectAll('p')
-            .data(dataset)
-            .enter()
-            .append('p')
-            .text(function(d){ return d[1] + ' = ' + yScale(d[1])});
+          var g = svg.append('g')
+                      .attr('transform', 'translate(150, 150)')
+                      .call(xAxis);
+
+          svg.append('g')
+             .attr('transform', 'translate(150, 150)')
+             .call(yAxis);
+
+          // g.append('g')
+          //   .selectAll('p')
+          //   .data(dataset)
+          //   .enter()
+          //   .append('p')
+          //   .text(function(d){ return d[0] + ' = ' + xScale(d[0]) });
+
+          // g.append('g')
+          //   .selectAll('p')
+          //   .data(dataset)
+          //   .enter()
+          //   .append('p')
+          //   .text(function(d){ return d[1] + ' = ' + yScale(d[1])});
       </script>
     </body>
 </html>
