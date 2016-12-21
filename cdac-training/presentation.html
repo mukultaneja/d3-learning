@@ -105,7 +105,7 @@
                     <h2 style="position: relative; top: 65px">Visualization Process</h2>
                     <hr style="position: relative; top: 65px"/>
                     <svg width="950" height="700">
-                        <g transform="translate(100, 0)">
+                        <g transform="translate(150, 0)">
                              <text x=-100 y=208 fill="white" style="font-size: 24px; font-weight: bold">Backend</text>
                              <line x1=-5 y1=200 x2=50 y2=200 stroke="black" />
 
@@ -245,11 +245,22 @@
 
                 <!-- slide 2 -->
                 <section>
-                    <h2> Before diving into D3, lets have to a look at.. </h2>
-                    <hr />
-                    <h4> Jquery Selectors </h4>
-                    <h4> Jquery Method Chaining </h4>
-                    <h4> Jquery Effects </h4>
+                    <section>
+                        <h2> Before D3, lets have to a look at.. </h2>
+                        <hr />
+                        <ul>
+                            <li>Jquery helps to understand very basic concepts which have been used in D3.</li>
+                            <li>There is no relation between Jquery and D3 but D3 also uses DOM SELECTER API which
+                            also used by Jquery and It is easy to understand with the help of Jquery.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2> Jquery Examples </h2>
+                        <hr />
+                        <h4><a href="https://api.jquery.com/category/selectors/" target="_blank">Jquery Selectors</a></h4>
+                        <h4><a href="http://www.jquery-tutorial.net/introduction/method-chaining/" target="_blank">Jquery Method Chaining</a></h4>
+                        <h4><a href="https://api.jquery.com/category/effects/" target="_blank">Jquery Effects</a></h4>
+                    </section>
                 </section>
 
                 <!-- slide 9 -->
@@ -435,8 +446,8 @@
                     <hr />
                     <h4> Lets try some basic shapes with some examples</h4>
                     <ul style="float: left">
-                        <li><a href="#">SVG Boy</a></li>
-                        <li><a href="#">Harry Potter Pendant</a></li>
+                        <li><a href="examples/svg_boy.html" target="_blank">SVG Boy</a></li>
+                        <li><a href="examples/harry_potter_pandal.html" target="_blank">Harry Potter Pendant</a></li>
                     </ul>
                 </section>
 
@@ -458,8 +469,8 @@
                     <hr />
                     <h4> Lets embed basic d3 into previous examples. </h4>
                     <ul style="float: left">
-                        <li><a href="#">SVG Boy</a></li>
-                        <li><a href="#">Harry Potter Pendant</a></li>
+                        <li><a href="examples/d3_svg_boy.html" target="_blank">SVG Boy</a></li>
+                        <li>Practise - Harry Potter Pendant</li>
                     </ul>
                 </section>
 
@@ -533,10 +544,10 @@
                       <g>
                         <rect fill="#eee" stroke="#ccc" stroke-dasharray="2,2" width="45%" height="100"></rect>
                         <rect fill="#eee" stroke="#ccc" stroke-dasharray="2,2" x="485" width="50%" height="100"></rect>
-                        <rect fill="#a1d99b" fill-opacity=".8" stroke="#71a76c" stroke-dasharray="2,2" y="10" x="343" width="120" height="80"></rect>
+                        <rect fill="#a1d99b" fill-opacity=".8" stroke="#71a76c" stroke-dasharray="2,2" y="10" x="403" width="120" height="80"></rect>
                         <text x="158" text-anchor="middle" y="50" dy=".35em" style="font-size: 18px">selections will go here</text>
-                        <text x="400" text-anchor="middle" y="50" dy=".35em" style="font-size: 18px;">joiny bits will go here</text>
-                        <text x="600" text-anchor="middle" y="50" dy=".35em" style="font-size: 18px">data will go here</text>
+                        <text x="460" text-anchor="middle" y="50" dy=".35em" style="font-size: 18px;">joiny bits will go here</text>
+                        <text x="720" text-anchor="middle" y="50" dy=".35em" style="font-size: 18px">data will go here</text>
                       </g>
                     </svg>
                 </section>
@@ -603,7 +614,7 @@
                         <h2> Enter Method </h2>
                         <hr />
                         <svg width="100%" height="100%">
-                            <g transform="translate(10, 40)">
+                            <g transform="translate(30, 40)">
                                 <text x="150" y="0" style="font-size: 24px; fill: white">Data Elements</text>
                                 <circle cx="220" cy="50" r="35" style="stroke: white; stroke-width: 3; fill: white"/>
                                 <line x1="257" y1="50" x2="410" y2="50" style="stroke:black" />
@@ -612,14 +623,14 @@
                                 <circle cx="220" cy="250" r="35" style="stroke: white; stroke-width: 3; fill: white"/>
                                 <line x1="257" y1="250" x2="410" y2="250" style="stroke:black" />
                             </g>
-                            <g transform="translate(330, 40)">
+                            <g transform="translate(360, 40)">
                                 <text x="80" y="0" style="font-size: 24px; fill: white">Enter</text>
                                 <rect x="60" y="10" height="270" width="100" style="fill: teal"/>
                                 <line x1="160" y1="50" x2="310" y2="50" style="stroke:black" />
                                 <line x1="160" y1="150" x2="310" y2="150" style="stroke:black" />
                                 <line x1="160" y1="250" x2="310" y2="250" style="stroke:black" />
                             </g>
-                            <g transform="translate(100, 40)">
+                            <g transform="translate(130, 40)">
                                 <text x="510" y="0" style="font-size: 24px; fill: white">Dom Elements</text>
                                 <circle cx="580" cy="50" r="35" style="stroke: white; stroke-width: 3; fill: white"/>
                                 <circle cx="580" cy="150" r="35" style="stroke: white; stroke-width: 3; fill: white"/>
@@ -692,7 +703,7 @@
                     <h2> Can you try this example ?</h2>
                     <hr />
                     <h5>
-                        <a href="#">Access Methods</a>
+                        <a href="examples/d3_enter_update_exit.html" target="_blank">Access Methods</a>
                     </h5>
                 </section>
 
@@ -701,7 +712,7 @@
                     <h2>Lets get our hands dirty now</h2>
                     <hr />
                     <h5>
-                        <a href="#">Lets create a bar chart</a>
+                        <a href="examples/profits.html" target="_blank">Lets create a bar chart</a>
                     </h5>
                 </section>
                 <section>
@@ -718,10 +729,10 @@
                     <h2>Lets do our hands dirty now</h2>
                     <hr />
                     <h5>
-                        <a href="#">Now Lets try for a horizontal bar chart</a>
+                        <a href="examples/d3_horizontal_bars.html" target="_blank">Now Lets try for a horizontal bar chart</a>
                     </h5>
                     <h5>
-                        <a href="#">Now Lets try for a scatter plot</a>
+                        <a href="examples/d3_scatter_plot.html" target="_blank">Now Lets try for a scatter plot</a>
                     </h5>
                 </section>
 
@@ -745,7 +756,7 @@
                             <li><h5>Ordianl Scales, converts domain values in discreate ranges</h5></li>
                         </ul>
                         <h5>
-                            <a href="#">D3 Scales</a>
+                            <a href="examples/d3_scales.html" target="_blank">D3 Scales</a>
                         </h5>
                     </section>
                 </section>
@@ -757,7 +768,7 @@
                         <hr />
                         <h5> Creates x & y axis for specific graphs </h5>
                         <h5>
-                            <a href="#">D3 Axes</a>
+                            <a href="examples/d3_scales.html" target="_blank">D3 Axes</a>
                         </h5>
                     </section>
                 </section>
@@ -769,18 +780,10 @@
                         <hr />
                         <h5> Add dymanic effects into d3 charts & components </h5>
                         <h5>
-                            <a href="#">D3 Transition</a>
+                            <a href="examples/d3_scatter_plot.html" target="_blank">Scatter Plot</a>
                         </h5>
-                    </section>
-                </section>
-
-                <!-- slide 31 -->
-                <section>
-                    <section>
-                        <h2>Time to do our hands dirty again</h2>
-                        <hr />
                         <h5>
-                            <a href="#">Let's create a scatter plot with transitionsile</a>
+                            <a href="examples/bouncing_balls.html" target="_blank">Bouncing Ball</a>
                         </h5>
                     </section>
                 </section>
@@ -791,7 +794,7 @@
                         <h2>D3 bar chart with JSON Data</h2>
                         <hr />
                         <h5>
-                            <a href="#">Let's create a bar chart</a>
+                            <a href="examples/profits.html" target="_blank">Let's create a bar chart</a>
                         </h5>
                     </section>
                 </section>
